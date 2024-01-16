@@ -19,7 +19,7 @@ pipeline{
                     when { expression {  params.action == 'create' } }
             steps{
             gitCheckout(
-                branch: "main",
+                branch: "master",
                 url: "https://github.com/Khemcha/Java_project.git"
             )
             }
